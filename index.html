@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MP DTE Predictor</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>MP DTE College Predictor</h1>
+  <h2>Find colleges based on your rank</h2>
+
+  <form onsubmit="return false;">
+
+    <label for="rank">Enter Rank</label>
+    <input type="number" id="rank" placeholder="Your rank..">
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option value="">Select</option>
+      <option value="UR">UR</option>
+      <option value="EWS">EWS</option>
+      <option value="OBC">OBC</option>
+      <option value="SC">SC</option>
+      <option value="ST">ST</option>
+    </select>
+
+    <label for="gender">Gender</label>
+    <select id="gender">
+      <option value="">Select</option>
+      <option value="OP">OP</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+    <label for="domicile">MP Domicile</label>
+    <select id="domicile">
+      <option value="">Select</option>
+      <option value="Y">Yes</option>
+      <option value="N">No</option>
+    </select>
+
+    <button type="button" onclick="showData()">Predict</button>
+
+  </form>
+
+  <!-- OUTPUT AREA -->
+  <div id="output"></div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

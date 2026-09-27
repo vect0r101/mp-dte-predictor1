@@ -1,0 +1,96 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+/* Page styling */
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5em;
+  margin-top: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+h2 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Form styling */
+form {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: auto 180px auto 120px;
+  gap: 60px 25px;
+  align-items: center;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 1.2em;
+  place-content: end space-between;
+  height: 300px;
+  
+}
+
+/* Inputs & selects */
+input,select {
+  font-size: 0.9em;
+  border-radius: 5px;
+  padding: 8px 10px;
+  transition: 0.3s;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+/* Hover */
+input:hover,select:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Button (instead of input submit) */
+button {
+  grid-column: 1 / -1;
+  justify-self: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background: #000000;
+  border: 1px solid #374151;
+  transition: 0.3s;
+  font-size: 0.8em;
+}
+
+/* Hover */
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+#output {
+  color: #00ff08; 
+  font-size: 1.2em;
+  margin-top: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: capitalize;
+}
+
